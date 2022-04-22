@@ -10,6 +10,8 @@ Creating data
 Before I create the data. The first thing to do is to crate the columns. After the columns, then pick the data types that I want the data in the columns to displays.
 I also do the same thing for creating Classes table
 
+![](Students%20Column.png)
+
 Creation relationships
 The goal is to create a relationship between the two tables. I want one student taking three classes. I am creating a one to many relationship between students and classes where one student is taking 3-5 classes. The studentID will also be in the classes table. With the craeting. For example one student is taking all business class while the other is taking engerring classes while other taking
 
