@@ -107,4 +107,20 @@ Creating a mailing for all the students in this database
 
 ![](Student's%20Mailing%20Labels.png)
 
+## The College Database Relationships
+
+I created relationship where one student is taking 3-5 classes and the credit hours of each class and the total credits hours. I choose six students as an example of the classes and the credits hours they have taken that were creating from linking tables when building relationships.
+
+Student 1 name is Timothy Wright. Timothy Wright Is an Accounting major. I am not actually an accounting major, but this is my fictional major. The classes that Timothy Wright is taking is Managerial Accounting, which is 3 credit hours, Calculus I which is 4 credit hours, and Computer Applications and Information Technology which is 3 credit hours. Timothy Wright is taking a total of 10 credit hours and the cost of the classes is $5000.
+
+Student 3 is a student named Mark Johnson. Mark Johnson is a Computer Science major. The classes that Mark Johnson is taking is English 101 which is 3 credit hours, Intro to Programming which is 2 credit hours, Calculus II which is 4 credit hours. Mark Johnson is taking a total of 9 credit hours and the total cost of the classes is $4500.
+
+Student 4 is a student named Kailey Harris. Kailey Harris is a Nursing major. The classes that Kailey Harris is taking is Biology in which is 3 credit hours, General Chemistry I which is 5 credit hours, and College Algebra which is 4 credit hours. Kailey Harris is taking a total of 12 credit hours and the total cost of the classes is $6000.
+   
+Student 7 is a student named Kate Lewis. Kate Lewis is a Finance major. The classes that Kate Lewis is taking is English 102 which is 3 credit hours, Macroeconomics which is 3 credit hours, Business Statistics which is 3 credit hours, and Financial Accounting which is 3 credit hours. Kate Lewis is taking a total of 12 credit hours and the cost of the classes is $6000.
+
+Student 8 is a student named John Baker. John Baker is a Chemical Engineering major. The classes that John Baker is taking is Physics I which is 5 credit hours, General Chemistry II which is 5 credit hours, Calculus II which is 4 credit hours, Linear Algebra which is 4 credit hours. John Baker is taking a total of 18 credit hours and the cost of the classes is $9000.
+
+Student 12 is a student named Lily Murphy. Lily Murphy is an Economics Major. The classes that Lily Murphy is taking is Macroeconomics which is 3 credit hours, Microeconomics which is 3 credit hours, Calculus I which is 4 credit hours, Computer Applications and Information Technology which is 3 credit hours, Financial Accounting which is 3 credit hours. Lily Murphy is taking a total of 16 credit hours and the cost of the classes is $8000.
+
 ## Conclusion
