@@ -139,12 +139,17 @@ Creating a mailing for all the students in this database
 ## The College Database Relationships
 
 I created relationship where one student is taking 3-5 classes and the credit hours of each class and the total credits hours. 
-In order to create this INNER JOins
+In order to see every student and their class that taken, INNER JOIN will be used to combine data from two different tables to create one data that is easy to read and not include information that is not not needed such as address zip code etc.
+
 INNER JOIN script:
 
 SELECT tblStudents.FirstName, tblStudents.LastName, tblClasses.ClassName, tblClasses.SectionNumber, tblClasses.CostPerCreditHour, tblClasses.CreditHours, tblClasses.StartDate
-FROM tblStudents INNER JOIN tblClasses ON tblStudents.StudentID = tblClasses.StudentID;
 
+FROM tblStudents 
+
+INNER JOIN tblClasses ON tblStudents.StudentID = tblClasses.StudentID;
+
+![](Database%20Relationships.png)
 
 I choose six students as an example of the classes and the credits hours they have taken that were creating from linking tables when building relationships.
 
@@ -161,3 +166,5 @@ Student 8 is a student named John Baker. John Baker is a Chemical Engineering ma
 Student 12 is a student named Lily Murphy. Lily Murphy is an Economics Major. The classes that Lily Murphy is taking is Macroeconomics which is 3 credit hours, Microeconomics which is 3 credit hours, Calculus I which is 4 credit hours, Computer Applications and Information Technology which is 3 credit hours, Financial Accounting which is 3 credit hours. Lily Murphy is taking a total of 16 credit hours and the cost of the classes is $8000.
 
 ## Conclusion
+
+Microsoft Access is used to create this college database. Students and Classes tables were created. Relationships were created where the two tables are linked to each other. I created data values that makes sense have patterns and trends that can be seen instead of just randomly inserting data values. The relationships were also created so I can create a scenario where one student is taking 3-5 classes and each class has a specific information such as section number, credit hours credit cost, etc. and also created an inner join where I can combine data from wo different tables to create one data that is easy to read and not include formation that is not needed to one student and all the classes they are taking.  Forms, reports, and mailing addresses were also created. That is the College Database Microsoft Access project that I have done in my class that I took in community college.
