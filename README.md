@@ -1,12 +1,10 @@
 # College Database
-Microsoft Access is used for this project
- Project 4 will be finsihed on April 16th 2022
-(UNDER CONSTRUCTION)
 
-The project that was done in the Microsoft access class that was taken at community college. This project is a college database. The college database contains student’s information and the classes at this college. The goal is to create a school database and to create the queries, forms, reports, and a mailing address. The data is created from screatch and no provided datatsets have been used during this project
+The project that was done in the Microsoft Access class that was taken at community college. This project is a college database. The college database contains student’s information and the classes at this college. The goal is to create a school database and to create the queries, forms, reports, and a mailing address.
 
 ## Creating data
-Before I create the data. The first thing to do is to crate the columns. After the columns, then pick the data types that I want the data in the columns to displays.
+
+Before data is created, tables are needed. The two tables are going to be made are the students table named tblStudents and the classes table named tblClasses. Columns are then created for both tables. After the columns, then data types will be chosen that I want the data in the columns to display.
 
 ## Student's Table
 
@@ -80,15 +78,15 @@ Another question is how many students are taking summer school. In the design vi
 
 ![](Query%20Students%20in%20Summer%20School%20Datasheet%20View.png)
 
-### Total Cost
+### Total Credit Cost per Student
 
-Another question is what the total credit cost for each student is. In Design view, I will create a new field name called cost per credit hour that uses the total credit cost per student’s field. The first field used is StudentID from the students table and the new field is from the classes table. For the Cost Per Credit hour newly create field, I will change from group by to sum and it will display 15 students and their total credit cost. For example student 1 is has the total credit cost of $5000 because each 3 credit hour class cost $1500 and a 4 credit class cost $2000 and Student 1 is taking Two 3-credit class and One  4-Credit class which totals to $5000.
+Another question is what the total credit cost for each student is. In Design view, I will create a new field name called cost per credit hour that uses the total credit cost per student’s field. The first field used is StudentID from the students table and the new field is from the classes table. For the Cost Per Credit hour newly create field, I will change from group by to sum and it will display 15 students and their total credit cost. For example student 1 is has the total credit cost of $5000 because each 3 credit hour class cost $1500 and a 4 credit class cost $2000 and Student 1 is taking Two 3-credit class and One 4-Credit class which totals to $5000.
 
 ![](Query%20Total%20Cost%20per%20Student%20Design%20View.png)
 
 ![](Query%20Total%20Cost%20per%20Student%20Datasheet%20View.png)
 
-### Total credits
+### Total Credits Hours Taken per Student
 
 ![](Query%20Total%20Credits%20per%20Student%20Design%20View.png)
 
