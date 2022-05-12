@@ -10,32 +10,59 @@ Before I create the data. The first thing to do is to crate the columns. After t
 
 ## Student's Table
 
+For the students table, 11 columns will be created for the students’ table. The columns that will be created is:
+1. StudentID 
+2. First Name 
+3. Last Name 
+4. Street 
+5. City 
+6. State 
+7. Zip 
+8. Phone 
+9. PrePay Required 
+10. Credit Card on File 
+11. Credit card Information
+
 ![](Students%20Column.png)
+
+The data types will be short text majority of the of the table with an exception of Prepay required, Credit Card on File which is Yes/NO data type and StudentID is the primary key.
 
 ![](Students%20Data%20Types.png)
 
 ### Student's Values
 
+The values that are created in this table are fictious information that are related to each student. 15 Students will be created and all the information that is related to the student.
+
 ![](Students%20Data%20Values.png)
 
 ## Classes Table
 
+For the classes table, 7 columns will be created for classes’ table. The columns that will be created is:
+1. ClassID
+2. Class Name  
+3. Section Number  
+4. Cost Per Credit Hour 
+5. Credit Hours  
+6. Start Date 
+7. StudentID 
+
 ![](Classes%20Column.png)
+
+The data types will be short text for Class Name, Credit Hours, and Section Number. Cost Per Credit Hour will be in currency. Start Date will be in Date/Time. StudentID will be number.
 
 ![](Classes%20Data%20Types.png)
 
 ### Classes Value
 
+The values that are created in this table are fictious information that are related to each class. 49 classes will be created and all the information that is related to each class.
+
 ![](Classes%20Data%20Values.png)
 
-## Creationg relationships
-The goal is to create a relationship between the two tables. I want one student taking three classes. I am creating a one-to-many relationship between students and classes where one student is taking 3-5 classes. The studentID will also be in the classes table.  Database is made where each student is taking classes that are specific to their study. For example, one student is taking all business class while the other is taking engineering classes while other taking
+## Creating Relationships
+
+The goal is to create a relationship between the two tables. I want one student taking 3-5 classes. I am creating a one-to-many relationship between students and classes where one student is taking 3-5 classes. The StudentID will also be in the classes table therefore the StudentID in the classes table is the foreign key that linked to the StudentID column in the students table.     
 
 ![](Students%20and%20Classes%20Relationship.png)
-
-Values
-For students I created fictional names 
-For class I created coming subjectd
 
 ## Creating Queries
 
@@ -54,6 +81,8 @@ Another question is how many students are taking summer school. In the design vi
 ![](Query%20Students%20in%20Summer%20School%20Datasheet%20View.png)
 
 ### Total Cost
+
+Another question is what the total credit cost for each student is. In Design view, I will create a new field name called cost per credit hour that uses the total credit cost per student’s field. The first field used is StudentID from the students table and the new field is from the classes table. For the Cost Per Credit hour newly create field, I will change from group by to sum and it will display 15 students and their total credit cost. For example student 1 is has the total credit cost of $5000 because each 3 credit hour class cost $1500 and a 4 credit class cost $2000 and Student 1 is taking Two 3-credit class and One  4-Credit class which totals to $5000.
 
 ![](Query%20Total%20Cost%20per%20Student%20Design%20View.png)
 
@@ -109,7 +138,15 @@ Creating a mailing for all the students in this database
 
 ## The College Database Relationships
 
-I created relationship where one student is taking 3-5 classes and the credit hours of each class and the total credits hours. I choose six students as an example of the classes and the credits hours they have taken that were creating from linking tables when building relationships.
+I created relationship where one student is taking 3-5 classes and the credit hours of each class and the total credits hours. 
+In order to create this INNER JOins
+INNER JOIN script:
+
+SELECT tblStudents.FirstName, tblStudents.LastName, tblClasses.ClassName, tblClasses.SectionNumber, tblClasses.CostPerCreditHour, tblClasses.CreditHours, tblClasses.StartDate
+FROM tblStudents INNER JOIN tblClasses ON tblStudents.StudentID = tblClasses.StudentID;
+
+
+I choose six students as an example of the classes and the credits hours they have taken that were creating from linking tables when building relationships.
 
 Student 1 name is Timothy Wright. Timothy Wright Is an Accounting major. I am not actually an accounting major, but this is my fictional major. The classes that Timothy Wright is taking is Managerial Accounting, which is 3 credit hours, Calculus I which is 4 credit hours, and Computer Applications and Information Technology which is 3 credit hours. Timothy Wright is taking a total of 10 credit hours and the cost of the classes is $5000.
 
